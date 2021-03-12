@@ -42,10 +42,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\busObj.cs" />
+    <Compile Include="itemBO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\VA.Business\VA.Business.csproj">
+      <Project>{ece1cc20-1b2c-4d52-a0ea-a6abab40021d}</Project>
+      <Name>VA.Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\VA.Data.Common\VA.Data.Common.csproj">
       <Project>{976b0b11-66b5-4a9c-a7fc-bcec4f1e16ba}</Project>
       <Name>VA.Data.Common</Name>

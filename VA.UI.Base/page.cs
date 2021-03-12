@@ -38,6 +38,7 @@ namespace VA.UI.Base
     {
         #region Properties
         Enums.permission _lockPermissionLevel;
+        Logging _logging;
 
         public Enums.permission LockPermissionLevel
         {
@@ -62,7 +63,71 @@ namespace VA.UI.Base
                 Session["LockPermissionLevel"] = value;
             }
         }
+
+        public bool IsAuthorizedPage
+        {
+            get
+            {
+                object o = null;
+
+                o = Session["IsAuthorizedPage"];
+
+                if ((o != null))
+                {
+                    return Convert.ToBoolean(o);
+                }
+
+                return false;
+            }
+
+            set { Session["IsAuthorizedPage"] = value; }
+        }
+
+
+
+        public new bool IsValid
+        {
+            get
+            {
+                object o = null;
+
+                o = Session["IsValid"];
+
+                if ((o != null))
+                {
+                    return Convert.ToBoolean(o);
+                }
+
+                return false;
+            }
+
+            set { Session["IsValid"] = value; }
+        }
         #endregion // End of Properties
+
+        #region Methods
+        #region Functions
+
+        #endregion // End of Functions
+
+        #region Voids
+        public void AppAuthorization()
+        {
+            _logging = new Logging(this.GetType());
+
+            //IsAuthorizedPage = IsEntryPage();
+
+            if (IsAuthorizedPage)
+            {
+                //AuthorizePage();
+            }
+            else
+            {
+                //NotAuthorized();
+            }
+        }
+        #endregion // End of Voids
+        #endregion // End of Methods
 
     }
 }

@@ -49,8 +49,7 @@ namespace VAWeb
         #region Voids
         void AuthorizePage()
         {
-            if (IsValid)
-                Response.Redirect(this.ResolveUrl("~/Source/login.aspx"));
+            Response.Redirect(this.ResolveUrl("~/Source/Item.aspx"));
         }
 
         void PageSetup()

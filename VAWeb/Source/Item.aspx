@@ -14,7 +14,7 @@
                     <table style="height: 50px">
                         <tr>
                             <td class="tdPage">
-                                <cc1:TextBox ID="txtbx1" runat="server" Width="300px" CssClass="textbox"></cc1:TextBox>
+                                <cc1:TextBox ID="txtbx1" runat="server" Width="300px" CssClass="textbox" ></cc1:TextBox>
                                 <cc1:Button ID="btnAdd" runat="server" CausesValidation="true" Text="Add" OnClick="btnAdd_Click" />
                             </td>
                         </tr>
@@ -39,7 +39,7 @@
                     </table>
                     <table style="height: 50px">
                         <tr>
-                            <cc1:ListBox ID="lbValues" runat="server" Height="550px" SelectionMode="Multiple" Width="100%"></cc1:ListBox>
+                            <cc1:ListBox ID="lstbx" runat="server" Height="550px" SelectionMode="Multiple"  Width="100%" OnSelectedIndexChanged="lstbx_SIC"></cc1:ListBox>
                         </tr>
                     </table>
 

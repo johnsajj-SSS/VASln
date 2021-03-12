@@ -78,12 +78,12 @@ namespace VAWeb.Source
         protected global::VA.UI.Base.Button btnDelete;
 
         /// <summary>
-        /// lbValues control.
+        /// lstbx control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::VA.UI.Base.ListBox lbValues;
+        protected global::VA.UI.Base.ListBox lstbx;
     }
 }

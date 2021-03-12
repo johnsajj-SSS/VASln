@@ -56,6 +56,11 @@ namespace VA.Data.Common
         #endregion // End of Properties
 
         #region Connection Strings
+        /// <summary>  
+		/// Gets the Connection String from the Web Config File to Connect to a Database(s)
+		/// </summary>	
+		/// <param name="databaseOption">Represents a Trigger to Connection String</param> 
+        /// <returns>string</returns>
         public static string GetConnectionString(DataBaseEntity databaseOption)
         {
             string connString = null;
