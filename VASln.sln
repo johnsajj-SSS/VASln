@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VA.Services.Common", "VA.Se
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VA.Data.Common", "VA.Data.Common\VA.Data.Common.csproj", "{976B0B11-66B5-4A9C-A7FC-BCEC4F1E16BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VAWeb", "VAWeb\VAWeb.csproj", "{C15DD68A-F856-4719-B9BD-BC11F7FEBD6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VA.UI.Base", "VA.UI.Base\VA.UI.Base.csproj", "{EEC0DFB7-C084-4E85-858C-5742350D383D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{976B0B11-66B5-4A9C-A7FC-BCEC4F1E16BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{976B0B11-66B5-4A9C-A7FC-BCEC4F1E16BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{976B0B11-66B5-4A9C-A7FC-BCEC4F1E16BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C15DD68A-F856-4719-B9BD-BC11F7FEBD6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C15DD68A-F856-4719-B9BD-BC11F7FEBD6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C15DD68A-F856-4719-B9BD-BC11F7FEBD6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C15DD68A-F856-4719-B9BD-BC11F7FEBD6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEC0DFB7-C084-4E85-858C-5742350D383D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEC0DFB7-C084-4E85-858C-5742350D383D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEC0DFB7-C084-4E85-858C-5742350D383D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEC0DFB7-C084-4E85-858C-5742350D383D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
