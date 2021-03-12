@@ -26,7 +26,7 @@
                     <table style="height: 50px">
                         <tr>
                             <td class="tdPage1">
-                                <cc1:Label ID="lbl1" runat="server" Width="150px" Visible="true"></cc1:Label>
+                                <cc1:Label ID="lbl1" runat="server" Width="300px" Visible="true"></cc1:Label>
                                 <cc1:Button ID="btnEdit" runat="server" CausesValidation="true" Text="Edit" OnClick="btnEdit_Click" />
                                 <cc1:Button ID="btnDone" runat="server" CausesValidation="true" Text="Done" OnClick="btnDone_Click" />
                                 <cc1:Button ID="btnDelete" runat="server" CausesValidation="true" Text="Delete" OnClick="btnDelete_Click" />

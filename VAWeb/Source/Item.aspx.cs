@@ -141,7 +141,6 @@ namespace VAWeb.Source
             {
                 PageSetup();
             }
-
         }
 
         void DeleteItemsList()
@@ -150,13 +149,20 @@ namespace VAWeb.Source
             {
                 for (int i = 0; i <= _oLstBx.Items.Count - 1; i++)
                 {
-                    int _index = _oLstBx.SelectedIndex;
-                    _oLstBx.Items.RemoveAt(_index);
+                    if (_index > 0)
+                    {
+                        int _index = _oLstBx.SelectedIndex;
 
-                    i = 15;
+                        _oLstBx.Items.RemoveAt(_index);
+
+                        i = 15;
+                    }
+                    else
+                    {
+                        _oLbl1.Text = "Please Select an Item to Delete.";
+                    }
                 }
 
-                SetControlDefault();
                 SetControlVisibility(true, true, true, true, true);              
             }
             catch (Exception)
@@ -208,16 +214,22 @@ namespace VAWeb.Source
                 {
                     int _index = _oLstBx.SelectedIndex;
 
-                    if (_oLstBx.SelectedItem.Text != _oTxtBx1.Text)
+                    if (_index > 0)
                     {
-                        _oLstBx.Items.Add(_oTxtBx1.Text);
-                        _oLstBx.Items.RemoveAt(_index);
+                        if (_oLstBx.SelectedItem.Text != _oTxtBx1.Text)
+                        {
+                            _oLstBx.Items.Add(_oTxtBx1.Text);
+                            _oLstBx.Items.RemoveAt(_index);
 
-                        i = 15;
+                            i = 15;
+                        }
+                    }
+                    else
+                    {
+                        _oLbl1.Text = "Please Select and Item to Edit.";
                     }
                 }
-
-                SetControlDefault();
+               
                 SetControlVisibility(true, true, true, true, true);
             }
             catch (Exception)
@@ -252,7 +264,7 @@ namespace VAWeb.Source
         {
             _oLbl1.Visible = true;
 
-            //_oTxtBx1.Text = "New Todo Item";
+            _oLbl1.Text = String.Empty;
         }
 
         void SetControlVisibility(bool value, bool value1, bool value2, bool value3, bool value4)
